@@ -1,9 +1,9 @@
 ---
 template: HomePage
-slug: ''
+slug: ""
 title: Scope 3 2 1
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the Scope321 carbon platform'
+featuredImage: https://ucarecdn.com/b9d9c184-4bb5-4957-b39c-a5e440f974e6/
+subtitle: " Welcome to the Scope321 carbon platform"
 meta:
   description: carbon platform
   title: scope321
