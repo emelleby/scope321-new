@@ -1,13 +1,31 @@
+'use strict';
+const path = require('path');
 const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
-    title: 'Yellowcake',
-    siteUrl: 'https://yellowcake.netlify.com'
+    title: 'Scope321',
+    siteUrl: 'https://scope321.netlify.com'
   },
   plugins: [
+    'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
+    {
+      resolve: '@builder.io/gatsby',
+      options: {
+        /** TODO: update this with your API key! */
+        publicAPIKey: '44b093e300534e7b9bfdfc34cb1189b5',
+        // to allow editing on local host
+        custom404Dev: path.resolve('src/pages/404.tsx'),
+        templates: {
+          // Render every `page` model as a new page using the /page.tsx template
+          // based on the URL provided in Builder.io
+          page: path.resolve('src/templates/page.tsx'),
+          header: path.resolve('src/templates/header.tsx')
+        }
+      }
+    },
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
