@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: '@builder.io/gatsby',
       options: {
-        /** TODO: update this with your API key! */
+        /** TODO: update this with your API key! - Done*/
         publicAPIKey: '44b093e300534e7b9bfdfc34cb1189b5',
         // to allow editing on local host
         custom404Dev: path.resolve('src/pages/404.tsx'),
